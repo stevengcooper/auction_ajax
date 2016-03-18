@@ -3,7 +3,7 @@
 <% if notice %>
   <div class="alert-box success radius"><%= notice %></div>
 <% end %>
-
+<div id="bids">
 <h1>
   <%= @item.name %>
 </h1>
@@ -23,5 +23,7 @@
   <h3>Highest bid</h3>
   <%= render partial: 'highest_bid', locals: {i: @item} %>
 
-  
+
   <%= render partial: 'bids', locals: {b: @bid} %>
+</div>
+</div>

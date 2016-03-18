@@ -17,3 +17,9 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(document).ready(function(){
+    setInterval(function(){
+      $("#high-bid").load(location.href + " #high-bid");
+    }, 15000);
+  });
